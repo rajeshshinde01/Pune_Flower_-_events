@@ -1016,3 +1016,14 @@ footer{padding-top:52px}
   .signature-showcase .botanical-divider{display:none}
   .intro{padding-top:48px}
 }
+
+/* Final mobile spacing rhythm */
+@media(max-width:600px){
+  .signature-showcase{padding-top:60px;padding-bottom:40px}
+  .intro{padding-top:44px;padding-bottom:34px}
+  .services-grid{margin-bottom:60px}
+  .gallery-section,.proof-band,.process,.planner,.faq{padding-top:60px;padding-bottom:60px}
+  .story-copy{padding-top:60px;padding-bottom:60px}
+  .section-heading{margin-bottom:36px}
+  .process-grid{margin-top:44px}
+}
