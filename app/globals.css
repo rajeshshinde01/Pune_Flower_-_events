@@ -1027,3 +1027,17 @@ footer{padding-top:52px}
   .section-heading{margin-bottom:36px}
   .process-grid{margin-top:44px}
 }
+
+/* Final desktop spacing rhythm */
+@media(min-width:901px){
+  .signature-showcase{padding-top:72px;padding-bottom:42px}
+  .signature-showcase .botanical-divider{display:none}
+  .intro{padding-top:44px;padding-bottom:36px}
+  .services-grid{margin-bottom:72px}
+  .story-copy{padding-top:72px;padding-bottom:72px}
+  .gallery-section,.proof-band,.process,.planner,.faq{padding-top:72px;padding-bottom:72px}
+  .section-heading{margin-bottom:44px}
+  .process-grid{margin-top:48px}
+  .contact{margin-top:32px;margin-bottom:32px;padding-top:56px;padding-bottom:56px}
+  footer{padding-top:48px}
+}
