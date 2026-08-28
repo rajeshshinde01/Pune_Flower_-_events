@@ -1010,3 +1010,9 @@ footer{padding-top:52px}
 @media(max-width:600px){
   .planner-copy>p:not(.eyebrow){margin-top:24px}
 }
+
+@media(max-width:600px){
+  .signature-showcase{padding-bottom:38px}
+  .signature-showcase .botanical-divider{display:none}
+  .intro{padding-top:48px}
+}
