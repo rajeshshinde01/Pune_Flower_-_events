@@ -36,6 +36,14 @@ footer a{
   min-height:44px;
 }
 
+.story-copy h2 + p{
+  margin-top:32px;
+}
+
+.story-copy>p:not(.eyebrow){
+  margin-bottom:18px;
+}
+
 @media (min-width:701px) and (max-width:900px){
   .gallery-grid{
     grid-template-columns:repeat(2,minmax(0,1fr));
@@ -49,6 +57,10 @@ footer a{
 }
 
 @media(max-width:600px){
+  .story-copy h2 + p{
+    margin-top:27px;
+  }
+
   .text-link{
     padding-block:10px;
   }
