@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Pune Flower and Event Studio monogram</title>
+  <desc id="desc">An elegant letter P surrounded by delicate leaves and a flower.</desc>
+  <defs>
+    <linearGradient id="rose" x1="18" y1="8" x2="98" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c77d70"/>
+      <stop offset="1" stop-color="#873f36"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="55" fill="#fbf8f3" stroke="url(#rose)" stroke-width="1.5"/>
+  <circle cx="60" cy="60" r="49" fill="none" stroke="#d9c2b9" stroke-width=".8" stroke-dasharray="1.5 4"/>
+  <path d="M42 89V31h20.5C77 31 84 38.5 84 49.2 84 61 75.2 68 61.2 68h-7.8v21" fill="none" stroke="#873f36" stroke-width="4.2" stroke-linecap="round"/>
+  <path d="M53.4 39.2h8.2c7 0 11 3.4 11 9.8 0 6.8-4.3 10.4-12.1 10.4h-7.1" fill="none" stroke="#a85749" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M28 74c8-1 12-5.2 14.5-12M30 72c-4.7-4.2-6.2-8.5-4.8-13.2 5.8.7 9.8 3.5 11.9 8.2M32.7 68c-1.3-6.5.2-11 4.5-14.2 4 4.5 4.8 9 2.5 13.7" fill="none" stroke="#718078" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M76 83c7.2-2.4 11.5-7 13-13.8M82 80c5.6.4 9.8-1.5 12.5-5.8-4.1-3.6-8.5-4.2-13.1-1.8M86.5 73c4.6-3.3 6.5-7.4 5.5-12.2-5.4.6-8.9 3.3-10.6 8.1" fill="none" stroke="#718078" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(84 34)">
+    <circle r="3.4" fill="#c77d70"/>
+    <path d="M0-11c4.6 3 5.5 6.5 2.8 10.3C-.7-3-1.6-6.4 0-11ZM10-3c-1 5.4-3.7 7.6-8.2 6.7.9-4.1 3.6-6.3 8.2-6.7ZM6 8C.8 7.3-1.8 5.2-1.8 1.5 2.4 2 5 4.2 6 8ZM-6 8c.8-5.3 3.4-7.6 7.7-6.8-.8 4.2-3.4 6.5-7.7 6.8ZM-10-3c5.2.1 8 2.1 8.5 6.2-4.2.1-7-2-8.5-6.2Z" fill="#d79a8e"/>
+  </g>
+  <path d="M38 97c14 6.5 30.5 6.5 44 0" fill="none" stroke="#c9a397" stroke-width="1.2" stroke-linecap="round"/>
+</svg>
