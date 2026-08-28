@@ -884,3 +884,120 @@ footer{padding-top:52px}
   .contact{margin:18px;padding:46px 22px}
   footer{padding-top:46px}
 }
+
+/* Warm, local and approachable — polished without a luxury-agency feel */
+.eyebrow{
+  letter-spacing:.11em;
+  text-transform:none;
+  font-size:11px;
+}
+
+.button{
+  border-radius:6px;
+  letter-spacing:.045em;
+  text-transform:none;
+  font-size:13px;
+}
+
+.text-link,
+.service-card a{
+  letter-spacing:.055em;
+  text-transform:none;
+  font-size:12px;
+}
+
+.hero h1{
+  max-width:720px;
+  font-size:clamp(46px,5vw,74px);
+}
+
+.hero-card{
+  border-radius:8px;
+  box-shadow:0 14px 38px rgba(32,58,50,.11);
+}
+
+.signature-showcase{
+  background:#faf8f2;
+}
+
+.signature-heading h2{
+  font-size:clamp(42px,4.4vw,64px);
+  letter-spacing:-.025em;
+}
+
+.signature-project-image{
+  border-radius:10px;
+}
+
+.signature-project-image span{
+  display:none;
+}
+
+.signature-project>p{
+  letter-spacing:.08em;
+  text-transform:none;
+  font-size:11px;
+}
+
+.service-card-visual{
+  border-radius:10px;
+}
+
+.service-card-visual:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 34px rgba(32,58,50,.08);
+}
+
+.service-image .service-number{
+  display:none;
+}
+
+.proof-band{
+  background:#e5ebe5;
+  color:var(--ink);
+}
+
+.proof-band .eyebrow{
+  color:var(--rose-dark);
+}
+
+.proof-band article{
+  border-left-color:rgba(40,80,68,.22);
+}
+
+.proof-band span{
+  color:#627069;
+}
+
+.proof-band .text-link{
+  color:var(--ink);
+  border-color:#aab6af;
+}
+
+.process-grid span{
+  display:inline-grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  background:#f2eee5;
+  font-size:20px;
+}
+
+.enquiry-form{
+  border-radius:10px;
+  box-shadow:0 14px 42px rgba(32,58,50,.07);
+}
+
+.contact{
+  border-radius:12px;
+}
+
+@media(max-width:600px){
+  .hero h1{font-size:44px}
+  .signature-heading h2{font-size:40px}
+  .signature-showcase,.gallery-section,.planner,.faq{padding-top:70px;padding-bottom:70px}
+  .intro,.proof-band,.process{padding-top:68px;padding-bottom:68px}
+  .services-grid{margin-bottom:68px}
+  .mobile-whatsapp{border-radius:7px;letter-spacing:.045em;text-transform:none;font-size:13px}
+}
