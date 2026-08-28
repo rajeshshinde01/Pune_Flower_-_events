@@ -840,3 +840,47 @@ footer .footer-legal{
   .policy-footer small{margin-left:0}
   footer .footer-legal{margin-top:0}
 }
+
+/* Balanced home-page rhythm: clear separation without long empty gaps */
+.signature-showcase{padding-top:88px;padding-bottom:78px}
+.signature-heading{margin-bottom:42px}
+.botanical-divider{margin-top:50px}
+.intro{padding-top:82px;padding-bottom:40px}
+.services-grid{margin-bottom:82px}
+.story{min-height:660px}
+.story-image{margin:42px}
+.story-copy{padding-top:82px;padding-bottom:82px}
+.gallery-section{padding-top:88px;padding-bottom:88px}
+.section-heading{margin-bottom:42px}
+.proof-band{padding-top:68px;padding-bottom:68px}
+.process{padding-top:78px;padding-bottom:78px}
+.process-grid{margin-top:50px}
+.planner{padding-top:88px;padding-bottom:88px}
+.faq{padding-top:88px;padding-bottom:88px}
+.contact{margin-top:42px;margin-bottom:42px;padding-top:62px;padding-bottom:62px}
+footer{padding-top:52px}
+
+@media(max-width:900px){
+  .signature-showcase{padding-top:76px;padding-bottom:68px}
+  .intro{padding-top:72px}
+  .services-grid{margin-bottom:72px}
+  .story-copy{padding-top:68px;padding-bottom:68px}
+  .gallery-section,.planner,.faq{padding-top:76px;padding-bottom:76px}
+  .proof-band,.process{padding-top:66px;padding-bottom:66px}
+}
+
+@media(max-width:600px){
+  .signature-showcase{padding:64px 22px 58px}
+  .signature-heading{margin-bottom:34px}
+  .botanical-divider{margin-top:38px}
+  .intro{padding:62px 22px 32px}
+  .services-grid{margin-bottom:62px}
+  .story-image{margin:18px;height:400px}
+  .story-copy{padding:52px 22px 58px}
+  .gallery-section{padding:64px 22px}
+  .section-heading{margin-bottom:34px}
+  .proof-band,.process,.planner,.faq{padding-top:62px;padding-bottom:62px}
+  .process-grid{margin-top:42px}
+  .contact{margin:18px;padding:46px 22px}
+  footer{padding-top:46px}
+}
