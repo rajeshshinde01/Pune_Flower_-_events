@@ -180,9 +180,140 @@ footer a{
   border-color:rgba(40,80,68,.18);
 }
 
+.home-contact-bar{
+  margin:0;
+  padding:22px clamp(28px,5vw,76px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:36px;
+  background:#f2eee5;
+  border-bottom:1px solid var(--line);
+}
+
+.home-contact-bar>p{
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  min-width:190px;
+  line-height:1.35;
+}
+
+.home-contact-bar>p span,
+.home-contact-bar a small{
+  color:#6d7772;
+  font-size:9px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+
+.home-contact-bar>p strong{
+  font:21px var(--serif);
+  font-weight:400;
+}
+
+.home-contact-bar>div{
+  display:flex;
+  align-items:stretch;
+  justify-content:flex-end;
+  flex:1;
+}
+
+.home-contact-bar a{
+  min-width:185px;
+  min-height:54px;
+  padding:5px clamp(18px,2.6vw,38px);
+  display:flex;
+  align-items:center;
+  gap:13px;
+  border-left:1px solid var(--line);
+  transition:background .2s,color .2s;
+}
+
+.home-contact-bar a:hover{
+  background:rgba(255,255,255,.7);
+  color:var(--rose-dark);
+}
+
+.home-contact-bar a>span:last-child{
+  display:flex;
+  flex-direction:column;
+  line-height:1.35;
+}
+
+.home-contact-bar a strong{
+  font-size:13px;
+  font-weight:600;
+}
+
+.contact-symbol{
+  width:34px;
+  height:34px;
+  flex:0 0 34px;
+  display:grid;
+  place-items:center;
+  border:1px solid rgba(40,80,68,.25);
+  border-radius:50%;
+  color:var(--rose-dark);
+  font-size:16px;
+}
+
+.whatsapp-symbol{
+  color:#2f6d51;
+}
+
+@media(max-width:900px){
+  .home-contact-bar{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:16px;
+  }
+
+  .home-contact-bar>div{
+    width:100%;
+  }
+
+  .home-contact-bar a{
+    flex:1;
+    min-width:0;
+  }
+}
+
 @media(max-width:600px){
   .section-quote{font-size:19px}
   .gallery-quote{margin-top:34px;font-size:19px}
+
+  .home-contact-bar{
+    padding:22px;
+  }
+
+  .home-contact-bar>p{
+    min-width:0;
+  }
+
+  .home-contact-bar>div{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0;
+    border-top:1px solid var(--line);
+    border-left:1px solid var(--line);
+  }
+
+  .home-contact-bar a{
+    min-height:70px;
+    padding:10px 12px;
+    border-left:0;
+    border-right:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+
+  .home-contact-bar a:last-child{
+    grid-column:1/-1;
+  }
+
+  .home-contact-bar a strong{
+    font-size:12px;
+  }
 }
 
 /* Editorial portfolio experience */
