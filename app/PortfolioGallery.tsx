@@ -3,12 +3,12 @@
 import { useEffect, useState } from "react";
 
 const images = [
-  { src: "/real-pink-white-floral-arrangement.png", alt: "Fresh pink and white floral arrangement", title: "Blush Floral Centrepiece", category: "Floral Styling", description: "Fresh pink and white blooms are layered with natural greenery to create a graceful floral focal point.", featured: true },
-  { src: "/real-handcrafted-flower-basket.png", alt: "Handcrafted rustic flower basket", title: "Handwoven Flower Basket", category: "Handcrafted", description: "A rustic handwoven basket is styled with fresh seasonal flowers for an intimate table or gifting detail." },
-  { src: "/real-floral-wall-decoration.png", alt: "Floral wall baskets with decorative lights", title: "Botanical Wall Detail", category: "Handcrafted", description: "Handcrafted wall baskets, trailing greens and warm lights bring a natural, welcoming character to the setting." },
-  { src: "/real-grand-opening-room.png", alt: "Grand opening room with marigold garlands", title: "Grand Opening Welcome", category: "Corporate", description: "Marigold garlands and floral accents transform a professional space into a warm and celebratory welcome." },
-  { src: "/real-decorated-office-corner.png", alt: "Office corner with floral bouquets and garlands", title: "Celebration Corner Styling", category: "Corporate", description: "Fresh bouquets, garlands and thoughtful finishing details create a polished office celebration corner." },
-  { src: "/real-floral-office-desk.png", alt: "Office desk styled with flowers and gifts", title: "Floral Desk Styling", category: "Corporate", description: "Bouquets, petals and carefully placed gifts add colour and occasion to a refined office setting." },
+  { src: "/real-pink-white-floral-arrangement.png", alt: "Fresh pink and white floral arrangement", title: "Blush Floral Centrepiece", category: "Floral Styling", palette: "Blush · Ivory · Garden green", detail: "Fresh roses · Layered foliage · Bespoke composition", description: "Fresh pink and white blooms are layered with natural greenery to create a graceful floral focal point.", featured: true },
+  { src: "/real-handcrafted-flower-basket.png", alt: "Handcrafted rustic flower basket", title: "Handwoven Flower Basket", category: "Handcrafted", palette: "Berry · Ivory · Natural wood", detail: "Seasonal flowers · Handwoven basket · Table styling", description: "A rustic handwoven basket is styled with fresh seasonal flowers for an intimate table or gifting detail." },
+  { src: "/real-floral-wall-decoration.png", alt: "Floral wall baskets with decorative lights", title: "Botanical Wall Detail", category: "Handcrafted", palette: "Botanical green · Warm light", detail: "Trailing greens · Fresh blooms · Handcrafted baskets", description: "Handcrafted wall baskets, trailing greens and warm lights bring a natural, welcoming character to the setting." },
+  { src: "/real-grand-opening-room.png", alt: "Grand opening room with marigold garlands", title: "Grand Opening Welcome", category: "Corporate", palette: "Marigold · Saffron · Green", detail: "Entrance styling · Ceremonial flowers · Welcome display", description: "Marigold garlands and floral accents transform a professional space into a warm and celebratory welcome." },
+  { src: "/real-decorated-office-corner.png", alt: "Office corner with floral bouquets and garlands", title: "Celebration Corner Styling", category: "Corporate", palette: "Vibrant floral · Warm neutrals", detail: "Bouquets · Garlands · Thoughtful finishing details", description: "Fresh bouquets, garlands and thoughtful finishing details create a polished office celebration corner." },
+  { src: "/real-floral-office-desk.png", alt: "Office desk styled with flowers and gifts", title: "Floral Desk Styling", category: "Corporate", palette: "Jewel tones · Fresh green", detail: "Floral gifting · Desk styling · Petal detailing", description: "Bouquets, petals and carefully placed gifts add colour and occasion to a refined office setting." },
 ];
 
 const categories = ["All work", "Corporate", "Floral Styling", "Handcrafted"];
@@ -57,6 +57,7 @@ export function PortfolioGallery() {
           <p className="eyebrow">Real work · {selected.category}</p>
           <h3 id="project-dialog-title">{selected.title}</h3>
           <p>{selected.description}</p>
+          <dl className="project-facts"><div><dt>Palette</dt><dd>{selected.palette}</dd></div><div><dt>Details</dt><dd>{selected.detail}</dd></div></dl>
           <div className="project-navigation" aria-label="Browse portfolio projects">
             <button type="button" onClick={previous} aria-label="Previous project">← Previous</button>
             <span>{(selectedIndex ?? 0) + 1} / {visible.length}</span>
