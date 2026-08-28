@@ -6,7 +6,7 @@ const services = [
   { image: "/real-grand-opening-room.png", title: "House Warming", text: "Warm, graceful décor for a beautiful new beginning." },
   { image: "/real-pink-white-floral-arrangement.png", title: "Customized Cakes", text: "Celebration cakes and floral details designed around your story." },
   { image: "/real-handcrafted-flower-basket.png", title: "Gifts & Hampers", text: "Thoughtful, personalised keepsakes made for the moment." },
-  { image: "/real-floral-wall-decoration.png", title: "Crafted Details", text: "Delicate handmade elements that make every setting yours." },
+  { image: "/real-floral-swag-clean.png", title: "Crafted Details", text: "Delicate handmade elements that make every setting yours." },
   { image: "/video-grand-opening-rangoli.png", title: "Wedding Rukhavat", text: "Elegant traditional displays with a contemporary finish." },
   { image: "/real-floral-entrance-people-removed.png", title: "Event Décor", text: "Complete styling for weddings, milestones and intimate events." },
 ];
