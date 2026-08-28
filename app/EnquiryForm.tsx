@@ -33,6 +33,6 @@ export function EnquiryForm() {
     <div className="field field-wide"><label htmlFor="details">What would you love us to create?</label><textarea id="details" name="details" rows={4} placeholder="Share your colours, theme, venue and any special details…"/></div>
     {error && <p className="form-error" role="alert">{error}</p>}
     <button className="button form-submit" type="submit">Continue on WhatsApp <span>↗</span></button>
-    <p className="form-note">No payment is taken here. We will confirm availability and details personally.</p>
+    <p className="form-note">No payment is taken here. By continuing on WhatsApp, you agree that we may use the details provided to respond to your enquiry. Read our <a href="/privacy-policy">Privacy Policy</a> and <a href="/booking-policy">Booking Terms</a>.</p>
   </form>;
 }
