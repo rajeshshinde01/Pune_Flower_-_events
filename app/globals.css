@@ -1041,3 +1041,109 @@ footer{padding-top:52px}
   .contact{margin-top:32px;margin-bottom:32px;padding-top:56px;padding-bottom:56px}
   footer{padding-top:48px}
 }
+
+/* Cross-device layout safeguards: prevent long content or controls from
+   widening the page outside the viewport at any supported screen size. */
+html,
+body{
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+button,
+input,
+select,
+textarea{
+  max-width:100%;
+  font:inherit;
+}
+
+.hero > *,
+.intro > *,
+.story > *,
+.planner > *,
+.faq > *,
+.signature-heading > *,
+.signature-projects > *,
+.proof-band > *,
+.contact > *,
+.policy-help > *{
+  min-width:0;
+}
+
+.hero-lead,
+.intro > p,
+.story-copy > p,
+.planner-copy > p,
+.faq-heading > p,
+.contact p,
+.policy-content p,
+.project-copy p{
+  overflow-wrap:anywhere;
+}
+
+@media(max-width:420px){
+  .site-header{
+    padding-inline:14px;
+  }
+
+  .brand{
+    gap:8px;
+  }
+
+  .brand-logo{
+    width:36px;
+    height:36px;
+  }
+
+  .brand strong{
+    font-size:22px;
+  }
+
+  .hero-copy,
+  .intro,
+  .gallery-section,
+  .signature-showcase,
+  .planner,
+  .faq,
+  .proof-band,
+  .process{
+    padding-inline:18px;
+  }
+
+  .hero h1{
+    font-size:clamp(38px,12vw,44px);
+  }
+
+  .hero-card{
+    right:14px;
+    left:14px;
+    min-width:0;
+  }
+
+  .home-contact-bar{
+    padding-inline:18px;
+  }
+
+  .gallery-filters button{
+    padding-inline:13px;
+  }
+
+  .project-navigation{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .project-navigation span{
+    display:none;
+  }
+}
+
+@media(min-width:1800px){
+  .hero-copy{
+    padding-right:max(110px,calc((100vw - 1600px)/2));
+  }
+
+  .hero-visual{
+    min-height:720px;
+  }
+}
