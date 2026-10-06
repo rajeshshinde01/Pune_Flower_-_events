@@ -1215,3 +1215,6 @@ textarea{
 
 /* The About image is real page content, not a decorative background, so its column never appears empty. */
 .story-image{overflow:hidden;background:#dfe7df}.story-image>img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 36%}
+
+/* Keep portfolio controls fully visible and comfortably tappable on the narrowest phones. */
+@media(max-width:420px){.gallery-filters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.gallery-filters button{min-width:0;padding:10px 8px;font-size:9px;letter-spacing:.07em;white-space:normal}}
