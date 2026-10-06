@@ -1190,3 +1190,9 @@ textarea{
 .hero-card{left:clamp(18px,4vw,56px)}
 @media(max-width:600px){.hero-card{left:20px}}
 @media(max-width:420px){.hero-card{left:14px}}
+
+/* Package cards describe the choice clearly, while one enquiry collects the details. */
+.celebration-path-card{min-height:570px}
+.celebration-guidance{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:22px;align-items:center;max-width:1320px;margin:18px auto 0;padding:20px 24px;border:1px solid rgba(32,58,50,.12);border-radius:10px;background:#f2eee5}.celebration-guidance>span{color:#8f6334;font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase}.celebration-guidance p{max-width:720px;margin:0;color:#5d6c64;font-size:13px;line-height:1.7}.celebration-guidance .text-link{white-space:nowrap}
+@media(max-width:900px){.celebration-path-card{min-height:570px}.celebration-path-card:last-child{min-height:0}.celebration-guidance{grid-template-columns:auto 1fr}.celebration-guidance .text-link{grid-column:2}}
+@media(max-width:600px){.celebration-path-card,.celebration-path-card:last-child{min-height:0}.celebration-guidance{display:flex;align-items:flex-start;flex-direction:column;gap:10px;margin-top:12px;padding:22px}.celebration-guidance .text-link{margin-top:5px}}
