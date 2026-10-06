@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 const links = [
   ["Services", "#services"],
+  ["Plan", "#plan"],
   ["Our work", "#gallery"],
   ["About", "#story"],
   ["FAQ", "#faq"],
