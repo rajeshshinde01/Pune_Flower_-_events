@@ -1212,3 +1212,6 @@ textarea{
 @media(max-width:1320px){.location-section{margin-left:clamp(22px,4vw,54px);margin-right:clamp(22px,4vw,54px)}}
 @media(max-width:900px){.location-section{grid-template-columns:1fr;max-width:680px;margin-top:56px;margin-bottom:56px}.location-copy{padding:44px clamp(28px,7vw,64px)}.location-map,.location-map iframe{min-height:290px;height:290px}.location-map{order:2}}
 @media(max-width:600px){.location-section{margin:46px 18px;border-radius:11px}.location-copy{padding:38px 22px}.location-map,.location-map iframe{min-height:230px;height:230px}.location-copy address{font-size:16px;margin-top:18px}}
+
+/* The About image is real page content, not a decorative background, so its column never appears empty. */
+.story-image{overflow:hidden;background:#dfe7df}.story-image>img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 36%}
