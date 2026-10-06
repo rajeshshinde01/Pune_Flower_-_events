@@ -1175,3 +1175,8 @@ textarea{
 
 @media(max-width:900px){.services-grid{gap:12px}.service-card-visual{min-height:0}.gallery-project-caption{transform:none}.home-contact-bar a{min-width:0}.project-dialog{border-radius:12px}.event-edit-collage figure{box-shadow:0 8px 24px rgba(32,58,50,.06)}}
 @media(max-width:600px){.hero-note{padding-right:12px}.trust-strip div{padding-left:0;padding-right:0}.service-card-copy{padding-bottom:4px}.service-image{border-radius:9px}.gallery-filters{margin-bottom:22px}.gallery-project-caption{padding:46px 15px 14px}.gallery-project-caption strong{max-width:60%;text-align:right}.enquiry-form{border-radius:10px}.form-note{line-height:1.65}.faq-list summary{min-height:68px}.event-edit-collage figure{border-radius:9px}}
+
+/* The planning choices should begin promptly; this is a decision area, not a visual pause. */
+.planning-path{padding-top:clamp(44px,4vw,64px);padding-bottom:clamp(58px,5vw,78px)}
+.planning-path-heading{margin-bottom:clamp(22px,2vw,30px)}
+@media(max-width:600px){.planning-path{padding-top:44px;padding-bottom:56px}.planning-path-heading{margin-bottom:24px}}
