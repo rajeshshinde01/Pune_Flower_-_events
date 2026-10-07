@@ -1,4 +1,11 @@
-# vinext-starter
+# Pune Flower & Event Studio
+
+For practical local development, build, deployment, publishing, and rollback
+steps, see [DEPLOYMENT.md](DEPLOYMENT.md).
+
+---
+
+# Vinext starter notes
 
 A clean full-stack starter running on
 [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
