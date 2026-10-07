@@ -64,7 +64,7 @@ export default function Home() {
         <div className="housewarming-story-media">
           <figure className="housewarming-story-main"><img src="/housewarming-petal-rangoli.jpeg" alt="Hand-laid flower-petal rangoli created for a housewarming celebration"/><figcaption>Petal rangoli welcome</figcaption></figure>
           <figure><img src="/housewarming-marigold-entrance-refined.png" alt="Marigold and leaf floral entrance decoration"/><figcaption>Floral entrance</figcaption></figure>
-          <figure><img src="/housewarming-lamp-rangoli.jpeg" alt="Flower-petal rangoli and ceremonial lamps"/><figcaption>Ceremonial details</figcaption></figure>
+          <figure><img src="/housewarming-lamp-rangoli-refined.png" alt="Flower-petal rangoli and ceremonial lamps"/><figcaption>Ceremonial details</figcaption></figure>
           <video className="housewarming-story-video" controls muted playsInline preload="metadata" poster="/housewarming-floral-hallway.jpeg"><source src="/housewarming-reveal.mp4" type="video/mp4"/>Your browser does not support this video.</video>
         </div>
       </section>
