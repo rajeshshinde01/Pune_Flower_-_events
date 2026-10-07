@@ -506,7 +506,8 @@ footer a{
 .proof-band>div{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:34px;
+  column-gap:34px;
+  row-gap:30px;
 }
 
 .proof-band article{
@@ -642,6 +643,7 @@ footer a{
   .signature-project:first-child .signature-project-image{height:520px}
   .signature-project-image{height:390px}
   .proof-band{grid-template-columns:1fr}
+  .proof-band>div{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 
 @media(max-width:600px){
