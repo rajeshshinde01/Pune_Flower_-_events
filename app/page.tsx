@@ -53,6 +53,21 @@ export default function Home() {
         <div className="signature-projects">{signatureProjects.map((project,index)=><a className="signature-project" href="#gallery" key={project.title}><div className="signature-project-image"><img src={project.image} alt={project.title}/><span>0{index+1}</span></div><p>{project.type}</p><h3>{project.title}</h3><small>{project.detail}</small></a>)}</div>
         <div className="botanical-divider" aria-hidden="true"><span>✦</span></div>
       </section>
+      <section className="housewarming-story" aria-labelledby="housewarming-story-heading">
+        <div className="housewarming-story-copy">
+          <p className="eyebrow">Featured real celebration</p>
+          <h2 id="housewarming-story-heading">A new beginning,<br/><em>welcomed with flowers.</em></h2>
+          <p>For this housewarming celebration, fresh flowers carried the welcome from the doorway through the home—using marigolds, petals, rangoli and small ceremonial details that made every corner feel ready for the occasion.</p>
+          <ul className="housewarming-story-list"><li>Floral entrance and garlands</li><li>Hand-laid petal rangoli</li><li>Pooja and welcome details</li><li>Fresh floral corners throughout the home</li></ul>
+          <a className="text-link" href="#enquire">Plan a housewarming <span>↓</span></a>
+        </div>
+        <div className="housewarming-story-media">
+          <figure className="housewarming-story-main"><img src="/housewarming-petal-rangoli.jpeg" alt="Hand-laid flower-petal rangoli created for a housewarming celebration"/><figcaption>Petal rangoli welcome</figcaption></figure>
+          <figure><img src="/housewarming-marigold-entrance.jpeg" alt="Marigold and leaf floral entrance decoration"/><figcaption>Floral entrance</figcaption></figure>
+          <figure><img src="/housewarming-lamp-rangoli.jpeg" alt="Flower-petal rangoli and ceremonial lamps"/><figcaption>Ceremonial details</figcaption></figure>
+          <video className="housewarming-story-video" controls muted playsInline preload="metadata" poster="/housewarming-floral-hallway.jpeg"><source src="/housewarming-reveal.mp4" type="video/mp4"/>Your browser does not support this video.</video>
+        </div>
+      </section>
       <section className="event-edit" aria-labelledby="event-edit-heading">
         <div className="event-edit-heading"><p className="eyebrow">The Pune Flower edit</p><h2 id="event-edit-heading">Small details.<br/><em>Lasting atmosphere.</em></h2><p>Every room has its own character. We use flowers, colour and thoughtful finishing touches to make it feel ready for the people who matter.</p><a className="text-link" href="#enquire">Create your own celebration <span>↓</span></a></div>
         <div className="event-edit-collage" aria-label="Examples of real floral work"><figure className="event-edit-large"><img src="/real-floral-wall-decoration.png" alt="A real floral wall decoration"/><figcaption><span>01</span><strong>Welcome with warmth</strong></figcaption></figure><figure><img src="/real-handcrafted-flower-basket.png" alt="A handcrafted flower basket"/><figcaption><span>02</span><strong>Give with intention</strong></figcaption></figure><figure><img src="/real-pink-white-floral-arrangement.png" alt="A pink and white flower arrangement"/><figcaption><span>03</span><strong>Gather around beauty</strong></figcaption></figure></div>
