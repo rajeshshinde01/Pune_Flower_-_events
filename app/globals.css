@@ -1181,6 +1181,13 @@ textarea{
 @media(max-width:900px){.services-grid{gap:12px}.service-card-visual{min-height:0}.gallery-project-caption{transform:none}.home-contact-bar a{min-width:0}.project-dialog{border-radius:12px}.event-edit-collage figure{box-shadow:0 8px 24px rgba(32,58,50,.06)}}
 @media(max-width:600px){.hero-note{padding-right:12px}.trust-strip div{padding-left:0;padding-right:0}.service-card-copy{padding-bottom:4px}.service-image{border-radius:9px}.gallery-filters{margin-bottom:22px}.gallery-project-caption{padding:46px 15px 14px}.gallery-project-caption strong{max-width:60%;text-align:right}.enquiry-form{border-radius:10px}.form-note{line-height:1.65}.faq-list summary{min-height:68px}.event-edit-collage figure{border-radius:9px}}
 
+/* Real event photography should be shown in full, never cropped merely to fill a card. */
+.signature-project-image,.service-image,.story-image,.event-edit-collage figure{display:grid;place-items:center;background:#f4eee3}
+.signature-project-image img,.service-image img,.story-image>img,.event-edit-collage figure img{object-fit:contain;padding:10px;transform:none}
+.signature-project:hover .signature-project-image img,.service-card-visual:hover .service-image img,.event-edit-collage figure:hover img{transform:none}
+.studio-promise-image{display:grid;place-items:center;background:#203a32}
+.studio-promise-image img{width:100%;height:100%;object-fit:contain;padding:18px}
+
 /* The planning choices should begin promptly; this is a decision area, not a visual pause. */
 .planning-path{padding-top:clamp(44px,4vw,64px);padding-bottom:clamp(58px,5vw,78px)}
 .planning-path-heading{margin-bottom:clamp(22px,2vw,30px)}
@@ -1246,3 +1253,6 @@ textarea{
 
 /* Real portfolio photography is framed, never cropped: visitors see the complete setup at a glance. */
 .gallery-project{background:#f4eee3}.gallery-project img{object-fit:contain;padding:8px}.gallery-project:hover img{transform:translateZ(0)}.project-image{display:grid;place-items:center;background:#f4eee3;min-height:min(620px,66vh)}.project-image img{object-fit:contain;padding:18px}
+
+/* Final safeguard: the About photo follows the same complete-framing rule. */
+.story-image>img{object-fit:contain;object-position:center;padding:10px}
