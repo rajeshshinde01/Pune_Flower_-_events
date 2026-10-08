@@ -1243,3 +1243,6 @@ textarea{
 
 /* Preserve the complete wide rangoli design wherever this project is viewed. */
 .gallery-project--contain{background:#f4eee3}.gallery-project--contain img{object-fit:contain;padding:7px}.project-image--contain{display:grid;place-items:center;background:#f4eee3}.project-image--contain img{object-fit:contain;padding:18px}
+
+/* Real portfolio photography is framed, never cropped: visitors see the complete setup at a glance. */
+.gallery-project{background:#f4eee3}.gallery-project img{object-fit:contain;padding:8px}.gallery-project:hover img{transform:translateZ(0)}.project-image{display:grid;place-items:center;background:#f4eee3;min-height:min(620px,66vh)}.project-image img{object-fit:contain;padding:18px}
