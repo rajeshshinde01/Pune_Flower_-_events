@@ -76,8 +76,7 @@ export default function Home() {
         </div>
         <div className="event-edit-collage" aria-label="Three real floral celebration stories">
           <figure className="event-edit-large event-edit-wall-story"><img src="/real-floral-wall-decoration.png" alt="Warm lights and handcrafted hanging baskets filled with fresh flowers"/><figcaption><span>01</span><strong>A warm floral welcome</strong><small>Handcrafted baskets, fresh flowers and a soft glow.</small></figcaption></figure>
-          <article className="event-edit-note"><span>02</span><p className="event-edit-note-label">Thoughtful arrival</p><h3>Made for the people<br/><em>walking in.</em></h3><p>A welcome should make a space feel ready before the first guest steps through the door.</p><small>Fresh flowers · Personal details · Finishing touches</small></article>
-          <figure className="event-edit-arrival-story"><img src="/video-decorated-walkway.png" alt="A flower-lined arrival created for a grand opening"/><figcaption><span>03</span><strong>An arrival to remember</strong><small>Fresh petals and florals guiding guests in.</small></figcaption></figure>
+          <figure className="event-edit-arrival-story"><img src="/video-decorated-walkway.png" alt="A flower-lined arrival created for a grand opening"/><figcaption><span>02</span><strong>An arrival to remember</strong><small>Fresh petals and florals guiding guests in.</small></figcaption></figure>
         </div>
       </section>
       <section className="intro" id="services"><div><p className="eyebrow">Our services</p><h2>Something beautiful<br/>for every occasion.</h2></div><p>Choose the service that feels closest to your celebration. We then shape the flowers, colours and details around your venue, ideas and budget.</p></section>
