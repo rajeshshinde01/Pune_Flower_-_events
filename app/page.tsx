@@ -13,7 +13,7 @@ const services = [
 ];
 
 const signatureProjects = [
-  { image: "/real-floral-entrance-people-removed.png", type: "Office opening", title: "A fresh flower entrance", detail: "Pink and white flowers · Greenery · Pune" },
+  { image: "/corporate-floral-arch-clean.png", type: "Office opening", title: "A flower-filled arrival", detail: "Roses · Fresh greenery · Pune" },
   { image: "/real-grand-opening-room.png", type: "Opening ceremony", title: "A warm traditional welcome", detail: "Marigold garlands · Flower arrangements · Pune" },
   { image: "/real-pink-white-floral-arrangement.png", type: "Flower arrangement", title: "A pink and white centrepiece", detail: "Fresh flowers · Hand-arranged greenery" },
 ];
