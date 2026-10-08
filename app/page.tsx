@@ -68,8 +68,17 @@ export default function Home() {
         </div>
       </section>
       <section className="event-edit" aria-labelledby="event-edit-heading">
-        <div className="event-edit-heading"><p className="eyebrow">The Pune Flower edit</p><h2 id="event-edit-heading">Small details.<br/><em>Lasting atmosphere.</em></h2><p>Every room has its own character. We use flowers, colour and thoughtful finishing touches to make it feel ready for the people who matter.</p><a className="text-link" href="#enquire">Create your own celebration <span>↓</span></a></div>
-        <div className="event-edit-collage" aria-label="Examples of real floral work"><figure className="event-edit-large"><img src="/real-floral-wall-decoration.png" alt="A real floral wall decoration"/><figcaption><span>01</span><strong>Welcome with warmth</strong></figcaption></figure><figure><img src="/real-handcrafted-flower-basket.png" alt="A handcrafted flower basket"/><figcaption><span>02</span><strong>Give with intention</strong></figcaption></figure><figure><img src="/real-pink-white-floral-arrangement.png" alt="A pink and white flower arrangement"/><figcaption><span>03</span><strong>Gather around beauty</strong></figcaption></figure></div>
+        <div className="event-edit-heading">
+          <p className="eyebrow">Celebrations, told in details</p>
+          <h2 id="event-edit-heading">Three ways<br/><em>a space feels special.</em></h2>
+          <p>Not a catalogue—three real moments, each shaped around the feeling people should have when they arrive: welcomed, celebrated and remembered.</p>
+          <a className="text-link" href="#gallery">Explore our real work <span>↓</span></a>
+        </div>
+        <div className="event-edit-collage" aria-label="Three real floral celebration stories">
+          <figure className="event-edit-large event-edit-wall-story"><img src="/real-floral-wall-decoration.png" alt="Warm lights and handcrafted hanging baskets filled with fresh flowers"/><figcaption><span>01</span><strong>A warm floral welcome</strong><small>Handcrafted baskets, fresh flowers and a soft glow.</small></figcaption></figure>
+          <figure className="event-edit-opening-story"><img src="/real-grand-opening-floral-display.png" alt="A floral welcome arrangement styled beside a grand opening board"/><figcaption><span>02</span><strong>A beginning, beautifully marked</strong><small>A considered welcome for an important new chapter.</small></figcaption></figure>
+          <figure className="event-edit-arrival-story"><img src="/video-decorated-walkway.png" alt="A flower-lined arrival created for a grand opening"/><figcaption><span>03</span><strong>An arrival to remember</strong><small>Fresh petals and florals guiding guests in.</small></figcaption></figure>
+        </div>
       </section>
       <section className="intro" id="services"><div><p className="eyebrow">Our services</p><h2>Something beautiful<br/>for every occasion.</h2></div><p>Choose the service that feels closest to your celebration. We then shape the flowers, colours and details around your venue, ideas and budget.</p></section>
       <section className="services-grid">{services.map((service,index)=><article className="service-card service-card-visual" key={service.title}><div className={`service-image${service.fit === "contain" ? " service-image--contain" : ""}`}><img src={service.image} alt=""/><span className="service-number">0{index+1}</span></div><div className="service-card-copy"><h3>{service.title}</h3><p>{service.text}</p><a href="#enquire" aria-label={`Plan ${service.title}`}>Plan this occasion <span>↗</span></a></div></article>)}</section>
