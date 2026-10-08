@@ -67,18 +67,6 @@ export default function Home() {
           <figure className="housewarming-story-finale"><img src="/housewarming-marigold-entrance-refined.png" alt="A house entrance framed with layered marigold and leaf garlands"/><figcaption>A traditional flower welcome</figcaption></figure>
         </div>
       </section>
-      <section className="event-edit" aria-labelledby="event-edit-heading">
-        <div className="event-edit-heading">
-          <p className="eyebrow">Celebrations, told in details</p>
-          <h2 id="event-edit-heading">Three ways<br/><em>a space feels special.</em></h2>
-          <p>Not a catalogue—three real moments, each shaped around the feeling people should have when they arrive: welcomed, celebrated and remembered.</p>
-          <a className="text-link" href="#gallery">Explore our real work <span>↓</span></a>
-        </div>
-        <div className="event-edit-collage" aria-label="Three real floral celebration stories">
-          <figure className="event-edit-large event-edit-wall-story"><img src="/real-floral-wall-decoration.png" alt="Warm lights and handcrafted hanging baskets filled with fresh flowers"/><figcaption><span>01</span><strong>A warm floral welcome</strong><small>Handcrafted baskets, fresh flowers and a soft glow.</small></figcaption></figure>
-          <figure className="event-edit-arrival-story"><img src="/video-decorated-walkway.png" alt="A flower-lined arrival created for a grand opening"/><figcaption><span>02</span><strong>An arrival to remember</strong><small>Fresh petals and florals guiding guests in.</small></figcaption></figure>
-        </div>
-      </section>
       <section className="intro" id="services"><div><p className="eyebrow">Our services</p><h2>Something beautiful<br/>for every occasion.</h2></div><p>Choose the service that feels closest to your celebration. We then shape the flowers, colours and details around your venue, ideas and budget.</p></section>
       <section className="services-grid">{services.map((service,index)=><article className="service-card service-card-visual" key={service.title}><div className={`service-image${service.fit === "contain" ? " service-image--contain" : ""}`}><img src={service.image} alt=""/><span className="service-number">0{index+1}</span></div><div className="service-card-copy"><h3>{service.title}</h3><p>{service.text}</p><a href="#enquire" aria-label={`Plan ${service.title}`}>Plan this occasion <span>↗</span></a></div></article>)}</section>
       <section className="celebration-paths" id="celebrations" aria-labelledby="celebration-paths-heading">
