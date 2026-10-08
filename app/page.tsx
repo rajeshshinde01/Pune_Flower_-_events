@@ -9,7 +9,7 @@ const services = [
   { image: "/real-handcrafted-flower-basket.png", fit: "contain", title: "Gifts & Hampers", text: "Personalised gifts and hampers prepared with care." },
   { image: "/real-floral-swag-clean.png", title: "Handmade Decorations", text: "Simple handcrafted details that make your occasion special." },
   { image: "/wedding-rukhavat-ceremony.png", fit: "contain", title: "Wedding Rukhavat", text: "Traditional wedding displays arranged beautifully for your family." },
-  { image: "/real-floral-entrance-people-removed.png", title: "Event Decoration", text: "Flower decoration for birthdays, weddings and family celebrations." },
+  { image: "/real-floral-entrance-people-removed.png", fit: "contain", title: "Event Decoration", text: "Flower decoration for birthdays, weddings and family celebrations." },
 ];
 
 const signatureProjects = [
