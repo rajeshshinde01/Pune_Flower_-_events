@@ -6,7 +6,7 @@ import { SiteHeader } from "./SiteHeader";
 const services = [
   { image: "/real-grand-opening-room.png", title: "House Warming", text: "Fresh and welcoming decoration for your new beginning." },
   { image: "/cake-story-customised-cake.jpg", title: "Customized Cakes", text: "Beautiful cakes made to match your celebration and preferences." },
-  { image: "/handcrafted-hanging-basket-refined.png", fit: "gift", title: "Gifts & Hampers", text: "Personalised gifts and hampers prepared with care." },
+  { image: "/handcrafted-marigold-basket.jpg", fit: "gift", title: "Gifts & Hampers", text: "Personalised gifts and hampers prepared with care." },
   { image: "/real-floral-swag-clean.png", title: "Handmade Decorations", text: "Simple handcrafted details that make your occasion special." },
   { image: "/wedding-rukhavat-ceremony.png", fit: "contain", title: "Wedding Rukhavat", text: "Traditional wedding displays arranged beautifully for your family." },
   { image: "/real-floral-entrance-people-removed.png", fit: "contain", title: "Event Decoration", text: "Flower decoration for birthdays, weddings and family celebrations." },
