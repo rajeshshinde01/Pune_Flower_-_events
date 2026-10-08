@@ -8,7 +8,7 @@ const services = [
   { image: "/cake-story-customised-cake.jpg", title: "Customized Cakes", text: "Beautiful cakes made to match your celebration and preferences." },
   { image: "/real-handcrafted-flower-basket.png", fit: "contain", title: "Gifts & Hampers", text: "Personalised gifts and hampers prepared with care." },
   { image: "/real-floral-swag-clean.png", title: "Handmade Decorations", text: "Simple handcrafted details that make your occasion special." },
-  { image: "/real-floral-display-cleaned.png", fit: "contain", title: "Wedding Rukhavat", text: "Traditional wedding displays arranged beautifully for your family." },
+  { image: "/wedding-rukhavat-ceremony.png", fit: "contain", title: "Wedding Rukhavat", text: "Traditional wedding displays arranged beautifully for your family." },
   { image: "/real-floral-entrance-people-removed.png", title: "Event Decoration", text: "Flower decoration for birthdays, weddings and family celebrations." },
 ];
 
