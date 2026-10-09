@@ -88,7 +88,7 @@ export default function Home() {
         </div>
         <div className="motion-stories-grid">
           <article className="motion-story">
-            <div className="motion-frame"><video controls muted playsInline preload="metadata" poster="/real-pink-white-floral-arrangement.png"><source src="/floral-entrance-detail.mp4" type="video/mp4"/>Your browser does not support video playback.</video></div>
+            <div className="motion-frame"><video controls muted playsInline preload="metadata" poster="/real-pink-white-floral-arrangement.png"><source src="/floral-entrance-detail-silent.mp4" type="video/mp4"/>Your browser does not support video playback.</video></div>
             <p className="motion-kicker">Fresh floral detail</p><h3>Flowers that welcome you in.</h3><p>A close, unhurried look at the fresh blooms and colour behind a thoughtful entrance.</p>
           </article>
           <article className="motion-story">
