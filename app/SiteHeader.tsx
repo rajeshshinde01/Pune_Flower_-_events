@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 
 const links = [
-  ["Our work", "#gallery"],
-  ["Services", "#services"],
-  ["Reviews", "#reviews"],
-  ["Plan", "#enquire"],
+  ["Gallery", "/gallery"],
+  ["Services", "/#services"],
+  ["Reviews", "/#reviews"],
+  ["Plan", "/#enquire"],
 ];
 
 export function SiteHeader() {
