@@ -532,7 +532,7 @@ footer a{
 .floating-contact a{display:flex;align-items:center;justify-content:center;gap:9px;min-width:46px;height:46px;padding:0 13px;border-radius:999px;box-shadow:0 10px 25px rgba(26,49,41,.18);color:#fff;font-size:11px;letter-spacing:.04em;transition:transform .2s ease,box-shadow .2s ease}
 .floating-contact a:hover{transform:translateX(-3px);box-shadow:0 14px 30px rgba(26,49,41,.24)}
 .floating-contact span{font-size:18px;line-height:1}.floating-contact b{font-weight:600}.floating-contact-whatsapp{background:#285044}.floating-contact-call{background:#8f6334}
-@media(max-width:700px){.floating-contact{right:14px;top:auto;bottom:84px;transform:none}.floating-contact-whatsapp{display:none!important}.floating-contact a{width:46px;padding:0}.floating-contact b{display:none}.floating-contact a:hover{transform:translateY(-2px)}}
+@media(max-width:700px){body{padding-bottom:0}.mobile-whatsapp{display:none!important}.floating-contact{right:14px;top:auto;bottom:18px;transform:none}.floating-contact-whatsapp{display:flex!important}.floating-contact a{width:46px;padding:0}.floating-contact b{display:none}.floating-contact a:hover{transform:translateY(-2px)}}
 
 @media(max-width:600px){
   .hero-actions .button,.hero-actions .text-link{width:100%;justify-content:center}
