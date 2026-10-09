@@ -534,6 +534,16 @@ footer a{
 .floating-contact span{font-size:18px;line-height:1}.floating-contact b{font-weight:600}.floating-contact-whatsapp{background:#285044}.floating-contact-call{background:#8f6334}
 @media(max-width:700px){body{padding-bottom:0}.mobile-whatsapp{display:none!important}.floating-contact{right:14px;top:auto;bottom:18px;transform:none}.floating-contact-whatsapp{display:flex!important}.floating-contact a{width:46px;padding:0}.floating-contact b{display:none}.floating-contact a:hover{transform:translateY(-2px)}}
 
+/* On small screens, gallery labels sit below the image so portrait work never has text layered over it. */
+@media(max-width:600px){
+  .gallery-page-work .gallery-grid{grid-auto-rows:auto}
+  .gallery-page-work .gallery-project{display:flex;height:auto;min-height:0;flex-direction:column}
+  .gallery-page-work .gallery-project img{height:auto;aspect-ratio:auto;object-fit:contain;padding:8px;background:#f4eee3}
+  .gallery-page-work .gallery-project-caption{position:static;min-height:66px;padding:13px 15px;background:#fff;color:var(--ink);opacity:1;transform:none}
+  .gallery-page-work .gallery-project-caption>span{color:#8f6334}
+  .gallery-page-work .gallery-project-caption strong{color:#29473d;font-size:15px}
+}
+
 @media(max-width:600px){
   .hero-actions .button,.hero-actions .text-link{width:100%;justify-content:center}
   .trust-strip{padding-top:4px;padding-bottom:4px}
