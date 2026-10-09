@@ -474,7 +474,6 @@ footer a{
 .studio-promise,
 .story,
 .gallery-section--secondary,
-.motion-stories,
 .proof-band,
 .process,
 .faq,
@@ -484,6 +483,10 @@ footer a{
 .gallery-show-all{display:flex;align-items:center;justify-content:center;gap:12px;margin:32px auto 0;padding:14px 22px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:11px var(--sans);font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:.2s}
 .gallery-show-all:hover{background:var(--ink);color:#fff}
 .gallery-show-all span{font-size:16px;font-weight:400}
+
+.motion-stories-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.motion-frame video{height:420px}
+@media(max-width:700px){.motion-stories-grid{grid-template-columns:1fr}.motion-frame video{height:min(118vw,500px)}}
 
 @media(max-width:600px){
   .hero-actions .button,.hero-actions .text-link{width:100%;justify-content:center}
@@ -1290,3 +1293,8 @@ textarea{
 
 /* Final safeguard: the About photo follows the same complete-framing rule. */
 .story-image>img{object-fit:contain;object-position:center;padding:10px}
+
+/* Two carefully chosen motion clips support the portfolio without crowding it. */
+.motion-stories-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.motion-frame video{height:420px}
+@media(max-width:700px){.motion-stories-grid{grid-template-columns:1fr}.motion-frame video{height:min(118vw,500px)}}

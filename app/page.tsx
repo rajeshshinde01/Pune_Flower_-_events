@@ -84,13 +84,9 @@ export default function Home() {
       <section className="motion-stories" aria-labelledby="motion-stories-heading">
         <div className="motion-stories-heading">
           <div><p className="eyebrow">A little movement</p><h2 id="motion-stories-heading">See the flowers<br/><em>come to life.</em></h2></div>
-          <p>Three short glimpses from real, finished setups. Play only the moment you would like to explore—there is no sound or automatic playback.</p>
+          <p>Two short glimpses from real, finished setups. Play only the moment you would like to explore—there is no sound or automatic playback.</p>
         </div>
         <div className="motion-stories-grid">
-          <article className="motion-story motion-story--feature">
-            <div className="motion-frame"><video controls muted playsInline preload="metadata" poster="/real-floral-display-original.png"><source src="/floral-ceremony-backdrop.mp4" type="video/mp4"/>Your browser does not support video playback.</video></div>
-            <p className="motion-kicker">Ceremonial backdrop</p><h3>A setting made to gather around.</h3><p>Fresh blush florals, soft light and handcrafted details—prepared for a meaningful ceremony.</p>
-          </article>
           <article className="motion-story">
             <div className="motion-frame"><video controls muted playsInline preload="metadata" poster="/real-pink-white-floral-arrangement.png"><source src="/floral-entrance-detail.mp4" type="video/mp4"/>Your browser does not support video playback.</video></div>
             <p className="motion-kicker">Fresh floral detail</p><h3>Flowers that welcome you in.</h3><p>A close, unhurried look at the fresh blooms and colour behind a thoughtful entrance.</p>
