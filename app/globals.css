@@ -488,6 +488,20 @@ footer a{
 .motion-frame video{height:420px}
 @media(max-width:700px){.motion-stories-grid{grid-template-columns:1fr}.motion-frame video{height:min(118vw,500px)}}
 
+/* A short, calm planning path helps people enquire without adding another long content block. */
+.simple-process{padding:clamp(72px,8vw,108px) clamp(28px,7vw,110px);background:#fff;text-align:center}
+.simple-process h2{margin:0;font:400 clamp(40px,4.2vw,62px)/1.04 var(--serif);letter-spacing:-.035em}
+.simple-process>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));max-width:1080px;margin:52px auto 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.simple-process article{padding:30px 34px 28px;border-right:1px solid var(--line)}
+.simple-process article:last-child{border-right:0}
+.simple-process span{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#f2eee5;color:var(--rose);font:italic 17px var(--serif)}
+.simple-process h3{margin:15px 0 7px;font:400 25px/1.12 var(--serif);color:#29473d}
+.simple-process article p{max-width:245px;margin:0 auto;color:#66736d;font-size:13px;line-height:1.65}
+.pricing-note{display:flex;gap:13px;margin-top:34px;padding:22px 0 0;border-top:1px solid rgba(40,80,68,.18);color:#66736d}
+.pricing-note>span{color:var(--rose);font-size:21px;line-height:1.35}
+.pricing-note p{margin:0;font-size:12px;line-height:1.65}.pricing-note strong{color:var(--ink)}
+@media(max-width:700px){.simple-process{padding:62px 22px}.simple-process>div{grid-template-columns:1fr;margin-top:36px}.simple-process article{padding:27px 14px;border-right:0;border-bottom:1px solid var(--line)}.simple-process article:last-child{border-bottom:0}.pricing-note{margin-top:28px}}
+
 @media(max-width:600px){
   .hero-actions .button,.hero-actions .text-link{width:100%;justify-content:center}
   .trust-strip{padding-top:4px;padding-bottom:4px}
