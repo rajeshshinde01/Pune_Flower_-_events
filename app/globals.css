@@ -466,6 +466,34 @@ footer a{
 .service-image--gift{display:grid;place-items:center;height:230px;background:#f8f1e8}
 .service-image--gift img{width:100%;height:100%;object-fit:contain!important;object-position:center!important;transform:none!important}
 
+/* Homepage refresh: keep the first visit focused on choosing, seeing, and planning. */
+.home-contact-bar,
+.signature-showcase,
+.housewarming-story,
+.celebration-paths,
+.studio-promise,
+.story,
+.gallery-section--secondary,
+.motion-stories,
+.proof-band,
+.process,
+.faq,
+.location-section,
+.contact{display:none!important}
+
+.gallery-show-all{display:flex;align-items:center;justify-content:center;gap:12px;margin:32px auto 0;padding:14px 22px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:11px var(--sans);font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:.2s}
+.gallery-show-all:hover{background:var(--ink);color:#fff}
+.gallery-show-all span{font-size:16px;font-weight:400}
+
+@media(max-width:600px){
+  .hero-actions .button,.hero-actions .text-link{width:100%;justify-content:center}
+  .trust-strip{padding-top:4px;padding-bottom:4px}
+  .trust-strip div{padding-top:16px;padding-bottom:16px}
+  .gallery-section--primary{padding-top:62px;padding-bottom:62px}
+  .gallery-show-all{width:100%;margin-top:22px}
+  .services-grid{margin-bottom:62px}
+}
+
 .service-card-visual:hover .service-image img{
   transform:scale(1.045);
 }

@@ -33,11 +33,22 @@ const images = [
 ];
 
 const categories = ["All work", "Housewarming", "Celebrations", "Corporate", "Floral Styling", "Handcrafted"];
+const showcaseSources = new Set([
+  "/corporate-floral-arch-clean.png",
+  "/corporate-floral-reception-clean.png",
+  "/birthday-floral-table-clean.png",
+  "/housewarming-petal-rangoli.jpeg",
+  "/housewarming-welcome-rangoli-original.jpeg",
+  "/housewarming-floral-hallway-refined.png",
+  "/handcrafted-lit-flower-basket.jpg",
+  "/real-floral-swag-clean.png",
+]);
 
 export function PortfolioGallery() {
   const [active, setActive] = useState("All work");
+  const [showAll, setShowAll] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const visible = active === "All work" ? images : images.filter((image) => image.category === active);
+  const visible = active === "All work" ? (showAll ? images : images.filter((image) => showcaseSources.has(image.src))) : images.filter((image) => image.category === active);
   const selected = selectedIndex === null ? null : visible[selectedIndex];
 
   const close = () => setSelectedIndex(null);
@@ -62,7 +73,7 @@ export function PortfolioGallery() {
 
   return <>
     <div className="gallery-filters" role="group" aria-label="Filter portfolio">
-      {categories.map((category) => <button className={active === category ? "active" : ""} type="button" onClick={() => { setActive(category); setSelectedIndex(null); }} key={category}>{category}</button>)}
+      {categories.map((category) => <button className={active === category ? "active" : ""} type="button" onClick={() => { setActive(category); setShowAll(category !== "All work" || showAll); setSelectedIndex(null); }} key={category}>{category}</button>)}
     </div>
     <div className="gallery-grid">
       {visible.map((image, index) => <button className={`gallery-project ${active === "All work" && (image.featured || index === 0) ? "gallery-wide" : ""}${image.fit === "contain" ? " gallery-project--contain" : ""}`} type="button" onClick={() => setSelectedIndex(index)} aria-label={`View details for ${image.title}`} key={image.src}>
@@ -70,6 +81,7 @@ export function PortfolioGallery() {
         <span className="gallery-project-caption"><span>{image.category}</span><strong>View project details</strong></span>
       </button>)}
     </div>
+    {active === "All work" && !showAll && <button className="gallery-show-all" type="button" onClick={() => setShowAll(true)}>View all decoration work <span>↓</span></button>}
     {selected && <div className="project-lightbox" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
       <section className="project-dialog" role="dialog" aria-modal="true" aria-labelledby="project-dialog-title">
         <button className="project-close" type="button" onClick={close} aria-label="Close project details" autoFocus>×</button>
