@@ -476,9 +476,7 @@ footer a{
 .gallery-section--secondary,
 .proof-band,
 .process,
-.faq,
-.location-section,
-.contact{display:none!important}
+.location-section{display:none!important}
 
 .gallery-show-all{display:flex;align-items:center;justify-content:center;gap:12px;margin:32px auto 0;padding:14px 22px;border:1px solid var(--ink);background:transparent;color:var(--ink);font:11px var(--sans);font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:.2s}
 .gallery-show-all:hover{background:var(--ink);color:#fff}

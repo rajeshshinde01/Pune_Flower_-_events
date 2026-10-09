@@ -6,6 +6,8 @@ const links = [
   ["Gallery", "/gallery"],
   ["Services", "/#services"],
   ["Reviews", "/#reviews"],
+  ["FAQ", "/#faq"],
+  ["Contact", "/#contact"],
   ["Plan", "/#enquire"],
 ];
 
