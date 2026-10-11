@@ -80,6 +80,19 @@ export function PortfolioGallery({ initialShowAll = false }: { initialShowAll?: 
     if (selected) dialogRef.current?.scrollTo({ top: 0, behavior: "auto" });
   }, [selected]);
 
+  useEffect(() => {
+    if (selectedIndex === null || visible.length < 2) return;
+    const adjacent = [
+      visible[(selectedIndex + 1) % visible.length],
+      visible[(selectedIndex - 1 + visible.length) % visible.length],
+    ];
+    adjacent.forEach(({ src }) => {
+      const preload = new Image();
+      preload.src = src;
+      void preload.decode?.().catch(() => undefined);
+    });
+  }, [active, selectedIndex, showAll, visible]);
+
   return <>
     <div className="gallery-filters" role="group" aria-label="Filter portfolio">
       {categories.map((category) => <button className={active === category ? "active" : ""} type="button" onClick={() => { setActive(category); setShowAll(category !== "All work" || showAll); setSelectedIndex(null); }} key={category}>{category}</button>)}
