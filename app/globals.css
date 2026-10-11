@@ -553,6 +553,16 @@ footer a{
   .services-grid{margin-bottom:62px}
 }
 
+/* On phones, portfolio captions are part of the card—not a layer over the photograph. */
+@media(max-width:600px){
+  .gallery-grid{grid-auto-rows:auto}
+  .gallery-project{display:flex;height:auto;min-height:0;flex-direction:column}
+  .gallery-project img{height:auto;aspect-ratio:auto;object-fit:contain;padding:8px;background:#f4eee3}
+  .gallery-project-caption{position:static;min-height:66px;padding:13px 15px;background:#fff;color:var(--ink);opacity:1;transform:none}
+  .gallery-project-caption>span{color:#8f6334}
+  .gallery-project-caption strong{color:#29473d;font-size:15px}
+}
+
 .service-card-visual:hover .service-image img{
   transform:scale(1.045);
 }
