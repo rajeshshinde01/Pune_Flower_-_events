@@ -507,6 +507,8 @@ footer a{
   .project-copy{padding:26px 22px 34px}
 }
 
+.project-mobile-navigation button:disabled,.project-navigation button:disabled{cursor:wait;opacity:.52}
+
 /* Final mobile viewer guardrail: each project occupies a predictable photo → controls → details sequence. */
 @media(max-width:600px){
   .project-lightbox{align-items:center;padding:10px}

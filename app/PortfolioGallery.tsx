@@ -52,13 +52,40 @@ export function PortfolioGallery({ initialShowAll = false }: { initialShowAll?: 
   const [active, setActive] = useState("All work");
   const [showAll, setShowAll] = useState(initialShowAll);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [isNavigating, setIsNavigating] = useState(false);
   const dialogRef = useRef<HTMLElement>(null);
+  const navigationRequestRef = useRef(0);
   const visible = active === "All work" ? (showAll ? images : images.filter((image) => showcaseSources.has(image.src))) : images.filter((image) => image.category === active);
   const selected = selectedIndex === null ? null : visible[selectedIndex];
 
-  const close = () => setSelectedIndex(null);
-  const previous = () => setSelectedIndex((current) => current === null ? null : (current - 1 + visible.length) % visible.length);
-  const next = () => setSelectedIndex((current) => current === null ? null : (current + 1) % visible.length);
+  const close = () => {
+    navigationRequestRef.current += 1;
+    setIsNavigating(false);
+    setSelectedIndex(null);
+  };
+  const moveTo = (nextIndex: number) => {
+    if (selectedIndex === null || isNavigating) return;
+    const request = ++navigationRequestRef.current;
+    const target = visible[nextIndex];
+    setIsNavigating(true);
+    const preload = new Image();
+    let settled = false;
+    const complete = () => {
+      if (settled || request !== navigationRequestRef.current) return;
+      settled = true;
+      setSelectedIndex(nextIndex);
+      setIsNavigating(false);
+    };
+    const ready = () => {
+      void preload.decode().catch(() => undefined).then(complete);
+    };
+    preload.onload = ready;
+    preload.onerror = complete;
+    preload.src = target.src;
+    if (preload.complete) ready();
+  };
+  const previous = () => selectedIndex !== null && moveTo((selectedIndex - 1 + visible.length) % visible.length);
+  const next = () => selectedIndex !== null && moveTo((selectedIndex + 1) % visible.length);
 
   useEffect(() => {
     if (!selected) return;
@@ -105,13 +132,13 @@ export function PortfolioGallery({ initialShowAll = false }: { initialShowAll?: 
     </div>
     {active === "All work" && !showAll && <button className="gallery-show-all" type="button" onClick={() => setShowAll(true)}>View all decoration work <span>↓</span></button>}
     {selected && <div className="project-lightbox" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
-      <section className="project-dialog" role="dialog" aria-modal="true" aria-labelledby="project-dialog-title" ref={dialogRef}>
+      <section className="project-dialog" role="dialog" aria-modal="true" aria-labelledby="project-dialog-title" aria-busy={isNavigating} ref={dialogRef}>
         <button className="project-close" type="button" onClick={close} aria-label="Close project details" autoFocus>×</button>
         <div className={`project-image${selected.fit === "contain" ? " project-image--contain" : ""}`}><img src={selected.src} alt={selected.alt}/></div>
         <div className="project-mobile-navigation" aria-label="Browse portfolio projects">
-          <button type="button" onClick={previous} aria-label="Previous project">← Previous</button>
+          <button type="button" onClick={previous} aria-label="Previous project" disabled={isNavigating}>← Previous</button>
           <span>{(selectedIndex ?? 0) + 1} / {visible.length}</span>
-          <button type="button" onClick={next} aria-label="Next project">Next →</button>
+          <button type="button" onClick={next} aria-label="Next project" disabled={isNavigating}>{isNavigating ? "Loading…" : "Next →"}</button>
         </div>
         <div className="project-copy">
           <p className="eyebrow">Real work · {selected.category}</p>
@@ -119,9 +146,9 @@ export function PortfolioGallery({ initialShowAll = false }: { initialShowAll?: 
           <p>{selected.description}</p>
           <dl className="project-facts"><div><dt>Occasion</dt><dd>{selected.occasion}</dd></div><div><dt>Location area</dt><dd>{selected.area}</dd></div><div><dt>Floral style</dt><dd>{selected.palette}</dd></div><div><dt>What we created</dt><dd>{selected.created}</dd></div></dl>
           <div className="project-navigation" aria-label="Browse portfolio projects">
-            <button type="button" onClick={previous} aria-label="Previous project">← Previous</button>
+            <button type="button" onClick={previous} aria-label="Previous project" disabled={isNavigating}>← Previous</button>
             <span>{(selectedIndex ?? 0) + 1} / {visible.length}</span>
-            <button type="button" onClick={next} aria-label="Next project">Next →</button>
+            <button type="button" onClick={next} aria-label="Next project" disabled={isNavigating}>{isNavigating ? "Loading…" : "Next →"}</button>
           </div>
           <a className="button" href={`https://wa.me/918793368616?text=${encodeURIComponent(`Hello Pune Flower & Event Studio, I would like to enquire about a setup similar to ${selected.title}.`)}`} target="_blank" rel="noreferrer">Enquire about a similar setup <span>↗</span></a>
           <small>Every arrangement is personalised for your occasion, venue and preferences.</small>
