@@ -486,6 +486,16 @@ footer a{
 .motion-frame video{height:420px}
 @media(max-width:700px){.motion-stories-grid{grid-template-columns:1fr}.motion-frame video{height:min(118vw,500px)}}
 
+/* Final mobile viewer guardrail: each project occupies a predictable photo → controls → details sequence. */
+@media(max-width:600px){
+  .project-lightbox{align-items:center;padding:10px}
+  .project-dialog{width:100%;max-width:560px;height:calc(100dvh - 20px);max-height:calc(100dvh - 20px);grid-template-columns:1fr;grid-template-rows:minmax(0,50dvh) auto auto;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain}
+  .project-image{width:100%;height:50dvh;min-height:50dvh;max-height:50dvh;background:#f4eee3}
+  .project-image img{width:100%;height:100%;min-height:0;max-height:100%;object-fit:contain;padding:12px}
+  .project-mobile-navigation{position:relative;z-index:1;min-height:64px}
+  .project-copy{min-width:0;padding:26px 22px 34px}
+}
+
 /* A short, calm planning path helps people enquire without adding another long content block. */
 .simple-process{padding:clamp(72px,8vw,108px) clamp(28px,7vw,110px);background:#fff;text-align:center}
 .simple-process h2{margin:0;font:400 clamp(40px,4.2vw,62px)/1.04 var(--serif);letter-spacing:-.035em}
@@ -571,6 +581,16 @@ footer a{
   .project-mobile-navigation button:last-child{text-align:right}
   .project-mobile-navigation span{color:#858c88;font:12px var(--serif);white-space:nowrap}
   .project-copy .project-navigation{display:none}
+}
+
+/* A stable mobile project viewer: one complete photo, then controls, then written details. */
+@media(max-width:600px){
+  .project-lightbox{align-items:center;padding:10px}
+  .project-dialog{width:100%;max-width:560px;height:calc(100dvh - 20px);max-height:calc(100dvh - 20px);grid-template-columns:1fr;grid-template-rows:minmax(0,50dvh) auto auto;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain}
+  .project-image{width:100%;height:50dvh;min-height:50dvh;max-height:50dvh;background:#f4eee3}
+  .project-image img{width:100%;height:100%;min-height:0;max-height:100%;object-fit:contain;padding:12px}
+  .project-mobile-navigation{position:relative;z-index:1;min-height:64px}
+  .project-copy{min-width:0;padding:26px 22px 34px}
 }
 
 .service-card-visual:hover .service-image img{
