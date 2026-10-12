@@ -134,7 +134,7 @@ export function PortfolioGallery({ initialShowAll = false }: { initialShowAll?: 
     {selected && <div className="project-lightbox" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && close()}>
       <section className="project-dialog" role="dialog" aria-modal="true" aria-labelledby="project-dialog-title" aria-busy={isNavigating} ref={dialogRef}>
         <button className="project-close" type="button" onClick={close} aria-label="Close project details" autoFocus>×</button>
-        <div className={`project-image${selected.fit === "contain" ? " project-image--contain" : ""}`}><img src={selected.src} alt={selected.alt} decoding="sync" fetchPriority="high"/></div>
+        <div className={`project-image${selected.fit === "contain" ? " project-image--contain" : ""}`}><img key={selected.src} src={selected.src} alt={selected.alt} decoding="sync" fetchPriority="high"/></div>
         <div className="project-mobile-navigation" aria-label="Browse portfolio projects">
           <button type="button" onClick={previous} aria-label="Previous project" disabled={isNavigating}>← Previous</button>
           <span>{(selectedIndex ?? 0) + 1} / {visible.length}</span>
