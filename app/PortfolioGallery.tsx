@@ -145,13 +145,13 @@ export function PortfolioGallery({ initialShowAll = false }: { initialShowAll?: 
           <h3 id="project-dialog-title">{selected.title}</h3>
           <p>{selected.description}</p>
           <dl className="project-facts"><div><dt>Occasion</dt><dd>{selected.occasion}</dd></div><div><dt>Location area</dt><dd>{selected.area}</dd></div><div><dt>Floral style</dt><dd>{selected.palette}</dd></div><div><dt>What we created</dt><dd>{selected.created}</dd></div></dl>
-          <div className="project-navigation" aria-label="Browse portfolio projects">
-            <button type="button" onClick={previous} aria-label="Previous project" disabled={isNavigating}>← Previous</button>
-            <span>{(selectedIndex ?? 0) + 1} / {visible.length}</span>
-            <button type="button" onClick={next} aria-label="Next project" disabled={isNavigating}>{isNavigating ? "Loading…" : "Next →"}</button>
-          </div>
           <a className="button" href={`https://wa.me/918793368616?text=${encodeURIComponent(`Hello Pune Flower & Event Studio, I would like to enquire about a setup similar to ${selected.title}.`)}`} target="_blank" rel="noreferrer">Enquire about a similar setup <span>↗</span></a>
           <small>Every arrangement is personalised for your occasion, venue and preferences.</small>
+        </div>
+        <div className="project-desktop-navigation" aria-label="Browse portfolio projects">
+          <button type="button" onClick={previous} aria-label="Previous project" disabled={isNavigating}>← Previous</button>
+          <span>{(selectedIndex ?? 0) + 1} / {visible.length}</span>
+          <button type="button" onClick={next} aria-label="Next project" disabled={isNavigating}>{isNavigating ? "Loading…" : "Next →"}</button>
         </div>
       </section>
     </div>}
