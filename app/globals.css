@@ -1410,6 +1410,9 @@ textarea{
 /* Real portfolio photography is framed, never cropped: visitors see the complete setup at a glance. */
 .gallery-project{background:#f4eee3}.gallery-project img{object-fit:contain;padding:8px}.gallery-project:hover img{transform:translateZ(0)}.project-image{display:grid;place-items:center;background:#f4eee3;min-height:min(620px,66vh)}.project-image img{object-fit:contain;padding:18px}
 
+/* Keep the full-screen project photo visually stable on mobile while a new image is selected. */
+.project-image img{transition:none!important;animation:none!important;filter:none!important;opacity:1!important;transform:translate3d(0,0,0)!important;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+
 /* Final safeguard: the About photo follows the same complete-framing rule. */
 .story-image>img{object-fit:contain;object-position:center;padding:10px}
 
