@@ -1466,6 +1466,14 @@ textarea{
   object-fit:contain!important;
   object-position:center!important;
 }
+@media(min-width:901px){
+  .project-image img,
+  .project-image--contain img{
+    /* Use the known dialog height rather than a percentage that can resolve
+       against the image's intrinsic size in a CSS grid. */
+    max-height:min(768px,calc(100dvh - 80px))!important;
+  }
+}
 .project-copy{
   grid-column:2;
   grid-row:1;
@@ -1518,7 +1526,7 @@ textarea{
   }
   .project-image img,.project-image--contain img{
     max-width:calc(100% - 24px)!important;
-    max-height:calc(100% - 24px)!important;
+    max-height:calc(46dvh - 24px)!important;
   }
   .project-mobile-navigation{
     position:relative;
